@@ -1,0 +1,23 @@
+sitemap jk label="JK Sitemap"
+
+{
+  Frame label="Date" {
+    Text item=Date
+  }
+
+  Frame label="Home ID" {
+    Text item=strZWaveNode01HomeID
+  }
+
+  Frame label="Battery" {
+    Text item=Thermostat_Battery
+  }
+
+  Frame label="Setpoint" {
+    Setpoint item=Thermostat_Setpoint label="Setpoint [%.1f °C]" step=0.5 minValue=15 maxValue=30
+  }
+
+  Group item=gZWaveStats label="Z-Wave Stats" icon="network"
+  Group item=gZWaveNode01 label="Z-Wave Controller" icon="network"
+  Group item=gZWaveNode06 label="Thermostat" icon="heating"
+}
