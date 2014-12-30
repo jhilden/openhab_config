@@ -26,7 +26,7 @@
         <version>2</version>
         <instances>0</instances>
         <targetNodeId>0</targetNodeId>
-        <interval>60</interval>
+        <interval>300</interval>
         <minInterval>60</minInterval>
         <maxInterval>1800</maxInterval>
         <defaultInterval>300</defaultInterval>
@@ -62,7 +62,7 @@
       <batteryCommandClass>
         <version>1</version>
         <instances>0</instances>
-        <batteryLevel>43</batteryLevel>
+        <batteryLevel>92</batteryLevel>
       </batteryCommandClass>
     </entry>
     <entry>
@@ -74,7 +74,7 @@
     </entry>
   </supportedCommandClasses>
   <nodeNeighbors/>
-  <lastUpdated>2014-12-01 21:07:43.497 UTC</lastUpdated>
-  <queryStageTimeStamp>2014-12-01 21:07:43.497 UTC</queryStageTimeStamp>
+  <lastUpdated>2014-12-01 21:13:57.358 UTC</lastUpdated>
+  <queryStageTimeStamp>2014-12-01 21:13:57.350 UTC</queryStageTimeStamp>
   <nodeStage>DONE</nodeStage>
 </node>
