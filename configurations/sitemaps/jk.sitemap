@@ -5,19 +5,29 @@ sitemap jk label="JK Sitemap"
     Text item=Date
   }
 
-  Frame label="Home ID" {
-    Text item=strZWaveNode01HomeID
+  Frame label="Wohnbereich (Node 6, 8, 11)" {
+    Text item=nrSensorBatteryN8
+    Text item=nrSensorTemperatureN8 label="(8)"
+    Text item=nrSensorHumidityN8
+    Text item=nrThermoBatteryN6
+    Setpoint item=nrThermoSetpointN6 label="Wohnzimmer (6) [%.1f °C]" step=0.5 minValue=15 maxValue=30
+    Text item=nrThermoBatteryN11
+    Setpoint item=nrThermoSetpointN11 label="Küche (11) [%.1f °C]" step=0.5 minValue=15 maxValue=30
   }
 
-  Frame label="Battery" {
-    Text item=Thermostat_Battery
+  Frame label="Unten" {
+    Text item=nrThermoBatteryN10
+    Setpoint item=nrThermoSetpointN10 label="Schlafzimmer (10) [%.1f °C]" step=0.5 minValue=15 maxValue=30
+    Text item=nrThermoBatteryN9
+    Setpoint item=nrThermoSetpointN9 label="Büro (9) [%.1f °C]" step=0.5 minValue=15 maxValue=30
   }
 
-  Frame label="Setpoint" {
-    Setpoint item=Thermostat_Setpoint label="Setpoint [%.1f °C]" step=0.5 minValue=15 maxValue=30
+  Frame label="Flur, Bad, WC" {
+    Text item=nrThermoBatteryN12
+    Setpoint item=nrThermoSetpointN12 label="Flur (12) [%.1f °C]" step=0.5 minValue=15 maxValue=30
+    Text item=nrThermoBatteryN5
+    Setpoint item=nrThermoSetpointN5 label="WC (5) [%.1f °C]" step=0.5 minValue=15 maxValue=30
+    Text item=nrThermoBatteryN7
+    Setpoint item=nrThermoSetpointN7 label="Flur (7) [%.1f °C]" step=0.5 minValue=15 maxValue=30
   }
-
-  Group item=gZWaveStats label="Z-Wave Stats" icon="network"
-  Group item=gZWaveNode01 label="Z-Wave Controller" icon="network"
-  Group item=gZWaveNode06 label="Thermostat" icon="heating"
 }

@@ -1,37 +1,28 @@
 DateTime Date "Date [%1$tA, %1$td.%1$tm.%1$tY]" <calendar> { ntp="Europe/Berlin:de_DE" }
 
+/* String strHomeIdN1 "Home ID [%s]" <house> { zwave="1:command=INFO,item=home_id" } */
 
+Number nrSensorBatteryN8 "Sensor Batterie [%d %%]" <climate> { zwave="8:1:command=BATTERY" }
+Number nrSensorTemperatureN8 "Temperatur [%.1f °C]" <climate> { zwave="8:1:command=SENSOR_MULTILEVEL,SENSOR_TYPE=1" }
+Number nrSensorHumidityN8 "Luftfeuchtigkeit [%.0f %%]" <climate> { zwave="8:1:command=SENSOR_MULTILEVEL,SENSOR_TYPE=5" }
 
+Number nrThermoBatteryN5 "Thermostat Battery [%d %%]" <heating> { zwave="5:1:command=BATTERY" }
+Number nrThermoSetpointN5 "Thermostat Setpoint [%d]" <heating> { zwave="5:1:command=THERMOSTAT_SETPOINT" }
 
-/* Controller stick statistics */
-Group     gZWaveStats
-Number     nZWaveStatsSOF       "Number Start of Frames[%s]"         (gZWaveStats, gZWave)     { zwave="1:command=INFO,item=sof" }
-Number     ntrZWaveStatsACK     "Number of Acknowledgments [%s]"     (gZWaveStats, gZWave)     { zwave="1:command=INFO,item=ack" }
-Number     ntrZWaveStatsCAN     "Number of CAN [%s]"                 (gZWaveStats, gZWave)     { zwave="1:command=INFO,item=can" }
-Number     ntrZWaveStatsNAK     "Number of NAK [%s]"                 (gZWaveStats, gZWave)     { zwave="1:command=INFO,item=nak" }
-Number     ntrZWaveStatsOOF     "Number of OOF [%s]"                 (gZWaveStats, gZWave)     { zwave="1:command=INFO,item=oof" }
+Number nrThermoBatteryN6 "Thermostat Battery [%d %%]" <heating> { zwave="6:1:command=BATTERY" }
+Number nrThermoSetpointN6 "Thermostat Setpoint [%d]" <heating> { zwave="6:1:command=THERMOSTAT_SETPOINT" }
 
-/* Controller information */
-Group     gZWaveNode01
-String     strZWaveNode01HomeID                    "Home ID [%s]" <house>                                (gZWaveNode01, gZWave)         { zwave="1:command=INFO,item=home_id" }
-Number     nZWaveNode01NetworkID                   "Aeon USB Network ID [%s]"                         (gZWaveNode01, gZWave)         { zwave="1:command=INFO,item=node_id" }
-String     ZWaveNode01LastUpdated                  "Aeon USB Last Updated [%1$tA, %1$td.%1$tm.%1$tY]"                     (gZWaveNode01, gZWave)         { zwave="1:1:command=INFO,item=last_update" }
-// String     ZWaveNode01Listening                    "Aeon USB Listening? [%s]"                         (gZWaveNode01, gZWave)         { zwave="1:1:command=INFO,item=listening" }
-// String     ZWaveNode01Routing                      "Aeon USB Routing [%s]"                         (gZWaveNode01, gZWave)         { zwave="1:1:command=INFO,item=routing" }
-Number     nZWaveNode01Version                     "Aeon USB Version [%s]"                         (gZWaveNode01, gZWave)         { zwave="1:1:command=INFO,item=version" }
-String     ZWaveNode01BasicCommandClass            "Aeon USB Basic Command Class Label [%s]"         (gZWaveNode01, gZWave)         { zwave="1:1:command=INFO,item=basic_label" }
-String     ZWaveNode01GenericCommandClass          "Aeon USB Generic Command Class Label [%s]"     (gZWaveNode01, gZWave)         { zwave="1:1:command=INFO,item=generic_label" }
-String     ZWaveNode01SpecificCommandClass         "Aeon USB Specific Command Class [%s]"             (gZWaveNode01, gZWave)        { zwave="1:1:command=INFO,item=specific" }
-String     ZWaveNode01SpecificCommandClassLabel    "Aeon USB Specific Command Class Label [%s]"     (gZWaveNode01, gZWave)         { zwave="1:1:command=INFO,item=specific_label" }
+Number nrThermoBatteryN7 "Thermostat Battery [%d %%]" <heating> { zwave="7:1:command=BATTERY" }
+Number nrThermoSetpointN7 "Thermostat Setpoint [%d]" <heating> { zwave="7:1:command=THERMOSTAT_SETPOINT" }
 
-/* Node information */
-/* 'Danfoss living connect z' radiator thermostat */
-Group     gZWaveNode06
-String     strZWaveNode06BasicCommandClass         "Thermostat - Command Class Label [%s]"                         (gZWaveNode06, gZWave)         { zwave="6:1:command=INFO,item=basic_label,refresh_interval=60" }
-String     strZWaveNode06GenericCommandClass       "Thermostat - Generic Command Class Label [%s]"                 (gZWaveNode06, gZWave)         { zwave="6:1:command=INFO,item=generic_label,refresh_interval=60" }
-String     strZWaveNode06SpcificCommandClass       "Thermostat - Specific Command Class [%s]"                     (gZWaveNode06, gZWave)        { zwave="6:1:command=INFO,item=specific,refresh_interval=60" }
-String     strZWaveNode06SpcificCommandClassLabel  "Thermostat - Specific Command Class Label [%s]"                 (gZWaveNode06, gZWave)         { zwave="6:1:command=INFO,item=specific_label,refresh_interval=60" }
+Number nrThermoBatteryN9 "Thermostat Battery [%d %%]" <heating> { zwave="9:1:command=BATTERY" }
+Number nrThermoSetpointN9 "Thermostat Setpoint [%d]" <heating> { zwave="9:1:command=THERMOSTAT_SETPOINT" }
 
-Number Thermostat_Battery    "Thermostat Battery [%d %%]"  <heating>  (gZWaveNode06, gZWave)  {zwave="6:1:command=BATTERY,refresh_interval=60"}
+Number nrThermoBatteryN10 "Thermostat Battery [%d %%]" <heating> { zwave="10:1:command=BATTERY" }
+Number nrThermoSetpointN10 "Thermostat Setpoint [%d]" <heating> { zwave="10:1:command=THERMOSTAT_SETPOINT" }
 
-Number Thermostat_Setpoint   "Thermostat Setpoint [%d]"    <heating>  (gZWaveNode06, gZWave)  {zwave="6:1:command=THERMOSTAT_SETPOINT,refresh_interval=60"}
+Number nrThermoBatteryN11 "Thermostat Battery [%d %%]" <heating> { zwave="11:1:command=BATTERY" }
+Number nrThermoSetpointN11 "Thermostat Setpoint [%d]" <heating> { zwave="11:1:command=THERMOSTAT_SETPOINT" }
+
+Number nrThermoBatteryN12 "Thermostat Battery [%d %%]" <heating> { zwave="11:1:command=BATTERY" }
+Number nrThermoSetpointN12 "Thermostat Setpoint [%d]" <heating> { zwave="11:1:command=THERMOSTAT_SETPOINT" }
