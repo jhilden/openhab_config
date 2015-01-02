@@ -24,5 +24,5 @@ Number nrThermoSetpointN10 "Thermostat Setpoint [%d]" <heating> { zwave="10:1:co
 Number nrThermoBatteryN11 "Thermostat Battery [%d %%]" <heating> { zwave="11:1:command=BATTERY" }
 Number nrThermoSetpointN11 "Thermostat Setpoint [%d]" <heating> { zwave="11:1:command=THERMOSTAT_SETPOINT" }
 
-Number nrThermoBatteryN12 "Thermostat Battery [%d %%]" <heating> { zwave="11:1:command=BATTERY" }
-Number nrThermoSetpointN12 "Thermostat Setpoint [%d]" <heating> { zwave="11:1:command=THERMOSTAT_SETPOINT" }
+Number nrThermoBatteryN12 "Thermostat Battery [%d %%]" <heating> { zwave="12:1:command=BATTERY" }
+Number nrThermoSetpointN12 "Thermostat Setpoint [%d]" <heating> { zwave="12:1:command=THERMOSTAT_SETPOINT" }

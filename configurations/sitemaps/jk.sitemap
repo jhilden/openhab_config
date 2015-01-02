@@ -24,7 +24,7 @@ sitemap jk label="JK Sitemap"
 
   Frame label="Flur, Bad, WC" {
     Text item=nrThermoBatteryN12
-    Setpoint item=nrThermoSetpointN12 label="Flur (12) [%.1f °C]" step=0.5 minValue=15 maxValue=30
+    Setpoint item=nrThermoSetpointN12 label="Bad (12) [%.1f °C]" step=0.5 minValue=15 maxValue=30
     Text item=nrThermoBatteryN5
     Setpoint item=nrThermoSetpointN5 label="WC (5) [%.1f °C]" step=0.5 minValue=15 maxValue=30
     Text item=nrThermoBatteryN7
