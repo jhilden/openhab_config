@@ -51,7 +51,7 @@
       <batteryCommandClass>
         <version>1</version>
         <instances>0</instances>
-        <batteryLevel>71</batteryLevel>
+        <batteryLevel>87</batteryLevel>
       </batteryCommandClass>
     </entry>
     <entry>
@@ -74,7 +74,7 @@
     </entry>
   </supportedCommandClasses>
   <nodeNeighbors/>
-  <lastUpdated>2014-12-30 22:01:08.597 UTC</lastUpdated>
-  <queryStageTimeStamp>2014-12-30 22:01:08.597 UTC</queryStageTimeStamp>
+  <lastUpdated>2014-12-30 22:08:55.826 UTC</lastUpdated>
+  <queryStageTimeStamp>2014-12-30 22:08:55.826 UTC</queryStageTimeStamp>
   <nodeStage>DONE</nodeStage>
 </node>

@@ -13,12 +13,11 @@
   <routing>true</routing>
   <supportedCommandClasses>
     <entry>
-      <commandClass>VERSION</commandClass>
-      <versionCommandClass>
+      <commandClass>BASIC</commandClass>
+      <basicCommandClass>
         <version>1</version>
         <instances>0</instances>
-        <libraryType>LIB_UNKNOWN</libraryType>
-      </versionCommandClass>
+      </basicCommandClass>
     </entry>
     <entry>
       <commandClass>NO_OPERATION</commandClass>
@@ -41,18 +40,11 @@
       </WakeUpCommandClass>
     </entry>
     <entry>
-      <commandClass>BASIC</commandClass>
-      <basicCommandClass>
-        <version>1</version>
-        <instances>0</instances>
-      </basicCommandClass>
-    </entry>
-    <entry>
       <commandClass>BATTERY</commandClass>
       <batteryCommandClass>
         <version>1</version>
         <instances>0</instances>
-        <batteryLevel>52</batteryLevel>
+        <batteryLevel>42</batteryLevel>
       </batteryCommandClass>
     </entry>
     <entry>
@@ -61,6 +53,14 @@
         <version>1</version>
         <instances>0</instances>
       </manufacturerSpecificCommandClass>
+    </entry>
+    <entry>
+      <commandClass>VERSION</commandClass>
+      <versionCommandClass>
+        <version>1</version>
+        <instances>0</instances>
+        <libraryType>LIB_UNKNOWN</libraryType>
+      </versionCommandClass>
     </entry>
     <entry>
       <commandClass>THERMOSTAT_SETPOINT</commandClass>
@@ -74,7 +74,7 @@
     </entry>
   </supportedCommandClasses>
   <nodeNeighbors/>
-  <lastUpdated>2014-12-01 23:20:16.88 UTC</lastUpdated>
-  <queryStageTimeStamp>2014-12-01 23:20:16.88 UTC</queryStageTimeStamp>
+  <lastUpdated>2015-01-02 05:42:55.440 UTC</lastUpdated>
+  <queryStageTimeStamp>2015-01-02 05:42:55.440 UTC</queryStageTimeStamp>
   <nodeStage>DONE</nodeStage>
 </node>
